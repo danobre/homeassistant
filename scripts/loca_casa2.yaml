@@ -1,6 +1,0 @@
-scr_loca_casa2:
-  alias: Localiza Casa 2
-  sequence:
-    - service: notify.notifica_telegram_2
-      data:
-        message: 'Denis Está em Casa'

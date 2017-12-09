@@ -1,6 +1,0 @@
-scr_loca_casa:
-  alias: Localiza Casa
-  sequence:
-    - service: notify.notifica_telegram
-      data:
-        message: 'Elida Está em Casa'
