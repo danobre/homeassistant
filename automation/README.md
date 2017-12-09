@@ -10,4 +10,14 @@
   <ul> Desliga Ar Condicionado quando acionado o Interruptor Xiaomi com clique duplo e ar condicionado ligado </ul>
     
 <h4>Controle Televisão (controle_tv.yaml) </h4>
-  <ul> dfsdfsdg </ul>
+  <ul> Controle Volume - Aumentar </ul>
+  <ul> Controle Volume - Diminuir </ul>
+  <ul> Liga TV Quando horário atual for igual ao selecionado nos Input Number </ul>
+  <ul> Desliga TV Quando horário atual for igual ao selecionado nos Input Number </ul>
+  <ul> Ao ligar Receptor desliga Chrome Cast </ul>
+  <ul> Ao ligar ChromeCast desliga Receptor </ul>
+  
+<h4>Controles (controles.yaml) </h4>
+  <ul> Checa Localização - Chegando em Casa - Liga Dispositivos </ul>
+  <ul> Checa Localização - Saindo de Casa - Desliga Dispositivos </ul>
+
