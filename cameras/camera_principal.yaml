@@ -1,4 +1,0 @@
-platform: ffmpeg
-input: -rtsp_transport tcp -i rtsp://admin:admin@noobres.homedns.org:91/ch0_0.264
-name: Camera Principal 1
-extra_arguments: -pred 1 -q:v 2
