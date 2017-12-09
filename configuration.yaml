@@ -168,6 +168,7 @@ mqtt:
   port: 1883
   username: mqtt_user
   password: !secret mqtt
+  keepalive: 60
 
 #---------------------Device Track----------------
 
@@ -195,26 +196,6 @@ emoncms_history:
   whitelist:
     - sensor.cpu_temperature
     - sensor.tensao_ar
- 
-#---------------------Notificacoes----------------
-
-notify:
-  - name: Android Notificacoes
-    platform: nma
-    api_key: !secret android_notifica
-    
-  - name: Notifica Telegram
-    platform: telegram
-    chat_id: 166403351
-
-  - name: Notifica Face
-    platform: facebook
-    page_access_token: !secret face
-    
-  - name: Notifica Texto
-    platform: file
-    filename: logs.txt
-    timestamp: true
 
 #---------------------Calendar--------------------
 
@@ -260,8 +241,7 @@ system_log:
 tts:
   - platform: google
     cache: true
-    cache_dir: /tmp/tts
-    time_memory: 3600
+    time_memory: 300
 
 #---------------------Counter---------------------
 
@@ -306,6 +286,8 @@ input_text: !include config/textos.yaml
 android_ip_webcam: !include_dir_merge_named android_cam
 
 light: !include_dir_merge_list lights
+
+notify: !include config/notificacoes.yaml
 
 #-------------------------------------------------
 

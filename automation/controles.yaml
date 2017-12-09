@@ -4,9 +4,13 @@
     entity_id: group.grp_09_02
     from: 'not_home'
     to: 'home'
+    for:
+      hours: 0
+      minutes: 3
+      seconds: 0
   action:
-    service: script.scr_atualiza_dispositivos
-#    service: script.scr_acordando
+#    service: script.scr_atualiza_dispositivos
+    service: script.scr_acordando
     
 - alias: Saindo de Casa
   trigger: 
@@ -14,6 +18,10 @@
     entity_id: group.grp_09_02
     from: 'home'
     to: 'not_home'
+    for:
+      hours: 0
+      minutes: 1
+      seconds: 0
   action:
     service: script.scr_atualiza_dispositivos
 #    service: script.scr_trabalhar

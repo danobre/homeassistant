@@ -1,0 +1,16 @@
+- name: Android Notificacoes
+  platform: nma
+  api_key: !secret android_notifica
+   
+- name: Notifica Telegram
+  platform: telegram
+  chat_id: !secret telegram_chat_dedy
+
+- name: Notifica Face
+  platform: facebook
+  page_access_token: !secret face
+    
+- name: Notifica Texto
+  platform: file
+  filename: logs.txt
+  timestamp: true
