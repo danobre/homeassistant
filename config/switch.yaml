@@ -52,14 +52,6 @@
       friendly_name: Controle Volume
       command_on: 'JgBoAAABKZQTNxITEhMSORI4EhMTEhMSEhQSOBM3EhMSExM4EjgTNxITExMRFBITEjgSExIUEhMSOBI4EjcUOBMSEjgSORI4EwAFDgABKEoTAAxQAAEpShMADE8AASlKEQAMUQABKEoSAA0F=='
       command_off: 'JgBoAAABKZQSORITEhQROBI5EhMSFBETEhQRORI4ExISExI5EzcSOBI5EhMSFBE4EzgSExITExITExM3EzcSExIVEDkTNxM4EgAFDwABKEsRAAxUAAEpShIADFQAAShLEgAMUwABKUkSAA0F=='
-    
-#- platform: broadlink
-#  host: 192.168.2.60
-#  mac: '34:EA:34:F6:40:87'
-#  type: sp3
-#  friendly_name: "Abajur Pedro Henrique"
-#  icon: mdi:power-socket
- 
 
 - platform: broadlink
   host: 192.168.2.76

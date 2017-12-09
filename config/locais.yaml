@@ -1,13 +1,13 @@
 
 - name: Apartamento
-  latitude: -17.24011435
-  longitude: -46.85543291
+  latitude: !secret lati_apt
+  longitude: !secret long_apt
   radius: 50
 #  icon: mdi:home
   
   
 
 - name: Trabalho
-  latitude: -17.1808882
-  longitude: -46.8872663
+  latitude: !secret lati_trab
+  longitude: !secret long_trab
 #  icon: mdi:work
