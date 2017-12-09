@@ -27,4 +27,25 @@ Como já tinha um experiência de algum tempo com o Raspberry Pi(desde a versão
 
 <h3> Passos com o Raspberry PI </h3>
 
-Existem vários sistemas operacionais para o 
+Existem vários sistemas operacionais para o Raspberry e disponível para download https://www.raspberrypi.org/downloads/ mas resolvi instar o Raspbian que, conforme informei antes, já tinha tido mais contato anteriormente.
+
+Depois de instalado o Raspbian dava início a instalação do Home Assistant.
+A instalação do Home Assistant é bem complicada tem que seguir os passos corretamente.
+
+Para instalação pelo site oficial do HA só seguir o link https://home-assistant.io/getting-started/.
+
+No meu caso eu segui os passos do link do youtube https://www.youtube.com/watch?v=GjzOXkPb7XE&t=329s, com os seguintes passos:
+
+logado no raspberry, abra o terminal e execute os comandos:
+* sudo raspi-config
+* sudo apt-get update
+* sudo apt-get upgrade
+* sudo reboot
+* sudo pip3 install homeassistant
+* sudo nano /etc/init.d/hass-daemon, copy the script, change user to root
+* sudo chmod +x /etc/init.d/hass-daemon
+* sudo update-rc.d hass-daemon defaults
+* sudo service hass-daemon install
+* sudo reboot
+
+Com isso, no meu caso, o sistema subiu e funcionou normalmente.
