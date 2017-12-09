@@ -1,8 +1,0 @@
-grp_09:
-  name: Localização
-  view: false
-  icon: mdi:map-marker
-  entities:
-    - device_tracker.leeco
-#    - device_tracker.s5
-    - device_tracker.s4

@@ -1,6 +1,0 @@
-interr:
-  name: switchs
-  view: true
-  icon: mdi:power-socket
-  entities:
-    - group.grp_05

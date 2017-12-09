@@ -1,6 +1,0 @@
-grp_21:
-  name: Estação Espacial
-  view: false
-  entities:
-    - binary_sensor.iss
-    - camera.iss

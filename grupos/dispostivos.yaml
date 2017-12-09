@@ -1,6 +1,0 @@
-disp:
-  name: Status Dispositivos
-  view: true
-  icon: mdi:network
-  entities:
-    - group.grp_14

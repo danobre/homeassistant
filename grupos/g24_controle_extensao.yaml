@@ -1,9 +1,0 @@
-grp_24:
-  name: Extensão Broadlink
-  view: false
-  control: hidden
-  entities:
-    - switch.receptor
-    - switch.chromecast
-    - switch.tv_lg
-    - switch.reserva

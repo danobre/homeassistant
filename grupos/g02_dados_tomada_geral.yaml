@@ -1,9 +1,0 @@
-grp_02:
-  name: Dados Gerais
-  view: false
-  entities:
-    - sensor.tensao_tgeral
-    - sensor.corrente_tgeral
-    - sensor.potencia_tgeral
-    - sensor.consumo_tgeral
-    - sensor.cons_semanal_tgeral

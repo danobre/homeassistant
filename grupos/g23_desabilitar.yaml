@@ -1,6 +1,0 @@
-grp_23:
-  name: Entrada de Textos
-  view: false
-  entities:
-    - input_text.text1
-    - input_text.text2

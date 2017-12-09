@@ -1,6 +1,0 @@
-grp_06:
-  name: Relógio
-  view: false
-  icon: mdi:timetable
-  entities:
-    - sensor.time_date

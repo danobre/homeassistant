@@ -1,7 +1,0 @@
-tv_control:
-  name: Controle Midia
-  view: true
-  icon: mdi:television-classic
-  entities:
-    - group.grp_19
-    - media_player.sala_nobre

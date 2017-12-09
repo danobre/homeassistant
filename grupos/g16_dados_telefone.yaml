@@ -1,7 +1,0 @@
-grp_16:
-  name: Dados Telefone
-  view: false
-  icon: mdi:cellphone
-  entities:
-  - sensor.nivel_bateria_samsung
-  - sensor.nivel_bateria_leeco

@@ -1,9 +1,0 @@
-grp_01:
-  name: Dados Geladeira
-  view: false
-  entities:
-    - sensor.tensao
-    - sensor.corrente
-    - sensor.potencia
-    - sensor.consumo
-    - sensor.cons_semanal

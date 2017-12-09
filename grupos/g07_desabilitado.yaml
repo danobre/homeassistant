@@ -1,6 +1,0 @@
-grp_07:
-  name: Controle de Ações
-  view: false
-  entities:
-    - input_number.slid_tempo_acoes
-    - sensor.tempo_acoes

@@ -1,6 +1,0 @@
-grp_25_1:
-  name: Acompanhamento Temperatura HA
-  view: false
-  control: hidden
-  entities:
-    - history_graph.Acompanhamento_Temperatura_HA

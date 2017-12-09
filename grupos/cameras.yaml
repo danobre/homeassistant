@@ -1,9 +1,0 @@
-web_cam:
-  name: Controle Web Cam
-  view: true
-  icon: mdi:webcam
-  entities:
-    - group.grp_10
-    - camera.leeco_cam
-    - camera.s5_cam
-    - camera.tablet_cam  

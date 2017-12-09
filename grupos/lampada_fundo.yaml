@@ -1,6 +1,0 @@
-lamp_fundo:
-  name: Controle Lampada Fundo
-  view: true
-  icon: mdi:lightbulb-on
-  entities:
-    - group.grp_18

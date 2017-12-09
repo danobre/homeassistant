@@ -1,6 +1,0 @@
-scrip:
-  name: Scripts
-  view: true
-  icon: mdi:script
-  entities:
-    - group.grp_04

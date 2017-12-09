@@ -1,8 +1,0 @@
-grp_20:
-  name: Status Smartphones
-  view: false
-  icon: mdi:map-marker
-  entities:
-    - binary_sensor.smartphone_leeco
-#    - binary_sensor.smartphone_s5
-    - binary_sensor.smartphone_s4

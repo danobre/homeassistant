@@ -1,8 +1,0 @@
-grp_15:
-  name: Comandos
-  view: false
-  icon: mdi:source-commit-start
-  control: hidden
-  entities:
-    - counter.ciclo_alarme
-    - sensor.total_ciclo

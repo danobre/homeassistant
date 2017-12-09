@@ -1,7 +1,0 @@
-energia:
-  name: Energia
-  view: true
-  icon: mdi:power-plug
-  entities:
-    - group.grp_01
-    - group.grp_02    
