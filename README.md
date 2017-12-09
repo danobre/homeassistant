@@ -7,7 +7,7 @@ Basicamente o projeto de automação foi divido em duas etapas:
 2) Definição do Software de Controle
 ```
 
-<h3> Definição dos Hardwares </h3>
+<h3> Definições </h3>
 
 Durante os estudos de para o projeto de automação residencial foi visto que havia vários hardware o primeiro dele foi o Arduino https://www.arduino.cc/en/Main/Products. Esse se demonstrou muito eficiente mas a parte de interação gráfica levaria a um desenvolvimento muito longo e não seria algo que daria para aproveitar para outros usuários, mesmo disponibilizando o código fonte.
 
@@ -18,3 +18,13 @@ Após buscas na internet encontrei um o Sonoff https://www.itead.cc/sonoff-wifi-
 Então depois de um tempo buscando algo interessantes na Internet encontrei um vídeo o youtube https://www.youtube.com/watch?v=diTQ3M5zH-0 que resolveria todos os meus problemas:
 
 Conheci o Home Assistant: https://home-assistant.io/
+
+Depois de um tempo lendo a sobre o Home Assistant deu pra perceber que a plataforma era excelente que além de 'resolver meus problemas' com od dispositivos era Open Source(que maravilha!!! :)), baseando na Web e desenvolvido em Python. Deu pra perceber que o Home Assistant trabalha com componentes que nada mais é do que plataforma para dispostivos ou serviços que são possíveis a integração entre eles o que se torna muito flexível o processo de integração e automação.
+
+Bem, depois de ter encontrado o Home Assistant a próxima definição seria: Onde rodar este sistema?
+
+Como já tinha um experiência de algum tempo com o Raspberry Pi(desde a versão 1) https://www.raspberrypi.org/products/ e já tinha aproximadamente 3 unidadas em casa optei usá-lo, a versão utilizada foi igual a esta https://produto.mercadolivre.com.br/MLB-697674443-raspberry-pi-modelo-b-plus-512mb-4-usb-arm1176jzf-s-700mhz-_JM. Além de ter em casa o preço é bem em conta pelo potencial que e ele e a entrega que ele proporciona.
+
+<h3> Passos com o Raspberry PI </h3>
+
+Existem vários sistemas operacionais para o 
