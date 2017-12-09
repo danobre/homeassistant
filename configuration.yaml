@@ -129,7 +129,7 @@ http:
    - 127.0.0.1
    - 192.168.2.0/24
   server_port: 80
-  base_url: noobres.homedns.org
+  base_url: !secret httpurl
   
 #---------------------Metereologia----------------
 
@@ -142,19 +142,19 @@ telegram_bot:
   - platform: polling
     api_key: !secret telegram
     allowed_chat_ids:
-      - 166403351
-      - 474880777
+      - !secret telegram_chat_dedy
+      - !secret telegram_chat_elida
   - platform: broadcast
     api_key: !secret telegram
     allowed_chat_ids:
-      - 166403351
-      - 474880777
+      - !secret telegram_chat_dedy
+      - !secret telegram_chat_elida
   - platform: webhooks
     api_key: !secret telegram
     parse_mode: html
     allowed_chat_ids:
-      - 166403351  
-      - 474880777      
+      - !secret telegram_chat_dedy  
+      - !secret telegram_chat_elida      
 
 #---------------------Thinger---------------------
 
@@ -169,8 +169,8 @@ mqtt:
   discovery: true
   broker: localhost
   port: 1883
-  username: mqtt_user
-  password: !secret mqtt
+  username: !secret mqtt_user
+  password: !secret mqtt_pass
   keepalive: 60
 
 #---------------------Device Track----------------
