@@ -41,6 +41,9 @@ logbook:
       - switch
       - automation
       - script
+      - group
+      - device_tracker
+      - zone
 
 sun:
 
