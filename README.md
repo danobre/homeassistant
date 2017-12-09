@@ -3,5 +3,5 @@ Usando Software OpenSouce para Automação Residencia
 
 Basicamente o projeto de automação foi divido em duas etapas:
 
-<p> 1) Definição do software para controle</p>
+<h1> 1) Definição do software para controle</h1>
 2) Definição dos hardwares básicos
