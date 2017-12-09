@@ -1,3 +1,3 @@
-Home Assistant
+Usando Software OpenSouce para Automação Residencia(Home Automation)
 
-Exemplo de configuração do Meu Home Assistant
+
