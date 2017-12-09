@@ -1,3 +1,3 @@
-Usando Software OpenSouce para Automação Residencia(Home Automation)
+Usando Software OpenSouce para Automação Residencia
 
 
