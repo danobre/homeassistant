@@ -49,3 +49,11 @@ logado no raspberry, abra o terminal e execute os comandos:
 * sudo reboot
 
 Com isso, no meu caso, o sistema subiu e funcionou normalmente.
+
+<h3> Configurações do Home Assistant </h3>
+
+Após a instalação do sistemas chegou a hora de configurar os componentes/serviços:
+
+O Home Assistant possui componente específicos para sua plataforma e alguns configurados são:
+
+<ul> config https://home-assistant.io/components/config/
