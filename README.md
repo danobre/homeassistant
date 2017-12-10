@@ -56,4 +56,4 @@ Após a instalação do sistemas chegou a hora de configurar os componentes/serv
 
 O Home Assistant possui componente específicos para sua plataforma e alguns configurados são:
 
-<ul> config https://home-assistant.io/components/config/
+<ul> <b>config: </b> https://home-assistant.io/components/config/
