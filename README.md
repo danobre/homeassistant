@@ -74,6 +74,10 @@ Os hardwares utilizados no meu projetos são:
 
 <ul> <a href="https://pt.aliexpress.com/item/Sonoff-Dual-Home-Automation-Wireless-WiFi-Smart-Switch-10A-Smart-Switch-Module-Remote-Control/32827070046.html?spm=a2g03.search0104.3.1.5TdJnL&ws_ab_test=searchweb0_0,searchweb201602_3_10152_10065_10151_10344_10068_5000016_10345_10342_10547_10343_51102_10340_5060016_10341_10548_5130016_10541_10084_10083_10307_10539_10312_10059_10313_5080016_10314_10534_100031_10604_10603_10103_10605_10594_10596_10142_10107,searchweb201603_31,ppcSwitch_5&algo_expid=d86bc252-caa8-48a3-b0aa-857d551eb885-0&algo_pvid=d86bc252-caa8-48a3-b0aa-857d551eb885&rmStoreLevelAB=0"> Sonoff Dual</a> - 1 Unidade </ul> 
 
-<ul> <a href="https://pt.aliexpress.com/item/Original-Aqara-Kit-Casa-Inteligente-Wi-fi-Sem-Fio-Multifuncional-Porta-de-Entrada-Da-Janela-Da/32841014026.html?spm=a2g03.search0104.3.134.UpjyN4&ws_ab_test=searchweb0_0%2Csearchweb201602_3_10152_10065_10151_10344_10068_10345_5000017_10342_10547_10343_51102_10340_10341_5060017_10548_5130017_10541_10084_10083_10307_10539_10312_10059_5080017_10313_10314_10534_100031_10604_10603_10103_10605_10594_10596_10142_10107%2Csearchweb201603_31%2CppcSwitch_5&algo_expid=1b39b40c-79bf-4b21-a611-e3e93c04b91c-16&algo_pvid=1b39b40c-79bf-4b21-a611-e3e93c04b91c&rmStoreLevelAB=0"> Kit Xiaomil</a> - 1 Unidade </ul>
+<ul> <a href="https://pt.aliexpress.com/item/Original-Aqara-Kit-Casa-Inteligente-Wi-fi-Sem-Fio-Multifuncional-Porta-de-Entrada-Da-Janela-Da/32841014026.html?spm=a2g03.search0104.3.134.UpjyN4&ws_ab_test=searchweb0_0%2Csearchweb201602_3_10152_10065_10151_10344_10068_10345_5000017_10342_10547_10343_51102_10340_10341_5060017_10548_5130017_10541_10084_10083_10307_10539_10312_10059_5080017_10313_10314_10534_100031_10604_10603_10103_10605_10594_10596_10142_10107%2Csearchweb201603_31%2CppcSwitch_5&algo_expid=1b39b40c-79bf-4b21-a611-e3e93c04b91c-16&algo_pvid=1b39b40c-79bf-4b21-a611-e3e93c04b91c&rmStoreLevelAB=0"> Kit Xiaomi</a> - 1 Unidade </ul>
 
 Os Sonoff foram atualizados os firmware para a versão Tasmota disponivel neste link: https://github.com/arendst/Sonoff-Tasmota
+
+<h3> Mais Detalhes </h3>
+
+Os detalhes da configurações, automações, scripts e notificacções estão detalhadas em cada pasta com seus respectivos comentários.
