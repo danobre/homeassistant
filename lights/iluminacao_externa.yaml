@@ -1,0 +1,10 @@
+- platform: mqtt
+  name: "Iluminação Sacada"
+  payload_on: "ON"
+  payload_off: "OFF"
+  state_topic: "stat/luz-sacada/POWER"
+  command_topic: "cmnd/luz-sacada/POWER"
+  qos: 1
+  retain: true
+  icon: mdi:television-classic
+  

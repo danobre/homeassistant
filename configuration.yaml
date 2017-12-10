@@ -210,21 +210,29 @@ calendar:
 #---------------------Weblinks--------------------
 
 panel_iframe:
-  router:
+  roteador:
     title: Roteador
     url: 'http://192.168.2.1'
     icon: mdi:router-wireless
-  fridge:
+  cozinha:
     title: Sonoff Luz Cozinha
     url: 'http://192.168.2.68'
     icon: mdi:responsive
-  fridge2:
+  sala:
     title: Sonoff Luz Sala
     url: 'http://192.168.2.90'
     icon: mdi:responsive
-  fridge3:
+  casal:
     title: Sonoff Luz Quarto Casal
     url: 'http://192.168.2.65'
+    icon: mdi:responsive
+  filho:
+    title: Sonoff Luz Quarto Casal
+    url: 'http://192.168.2.92'
+    icon: mdi:responsive
+  sacada:
+    title: Sonoff Luz Quarto Casal
+    url: 'http://192.168.2.91'
     icon: mdi:responsive
 
 #---------------------Google----------------------

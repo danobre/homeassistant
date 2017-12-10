@@ -37,3 +37,13 @@
   qos: 1
   retain: true
   icon: mdi:television-classic
+  
+- platform: mqtt
+  name: "Iluminação Quarto Filho"
+  payload_on: "ON"
+  payload_off: "OFF"
+  state_topic: "stat/luz-filho/POWER"
+  command_topic: "cmnd/luz-filho/POWER"
+  qos: 1
+  retain: true
+  icon: mdi:television-classic
