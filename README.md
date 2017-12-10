@@ -86,4 +86,7 @@ Os detalhes da configurações, automações, scripts e notificacções estão d
 <h3> Imagens </h3>
 
 <img src="https://github.com/dedynobre/homeassistant/blob/master/media/det1.jpg"/></br>
-<img src="https://github.com/dedynobre/homeassistant/blob/master/media/det2.jpg"/>
+<img src="https://github.com/dedynobre/homeassistant/blob/master/media/det2.jpg"/></br>
+<img src="https://github.com/dedynobre/homeassistant/blob/master/media/det3.jpg"/></br>
+<img src="https://github.com/dedynobre/homeassistant/blob/master/media/det4.jpg"/></br>
+<img src="https://github.com/dedynobre/homeassistant/blob/master/media/det5.jpg"/></br>
