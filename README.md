@@ -81,3 +81,12 @@ Os Sonoff foram atualizados os firmware para a versão Tasmota disponivel neste 
 <h3> Mais Detalhes </h3>
 
 Os detalhes da configurações, automações, scripts e notificacções estão detalhadas em cada pasta com seus respectivos comentários.
+
+
+<h3> Imagens </h3>
+
+<img src="https://github.com/dedynobre/homeassistant/blob/master/media/det1.jpg"/></br>
+<img src="https://github.com/dedynobre/homeassistant/blob/master/media/det2.jpg"/></br>
+<img src="https://github.com/dedynobre/homeassistant/blob/master/media/det3.jpg"/></br>
+<img src="https://github.com/dedynobre/homeassistant/blob/master/media/det4.jpg"/></br>
+<img src="https://github.com/dedynobre/homeassistant/blob/master/media/det5.jpg"/></br>
