@@ -101,3 +101,43 @@ slid_minuto_liga_tv:
   min: 0
   max: 59
   step: 1
+ 
+slid_cont_sala:
+  name: Tempo Sala
+  icon: mdi:timer
+  initial: 5
+  min: 1
+  max: 15
+  step: 1
+  
+slid_cont_corredor:
+  name: Tempo Corredor
+  icon: mdi:timer
+  initial: 5
+  min: 1
+  max: 15
+  step: 1
+  
+slid_cont_casal:
+  name: Tempo Quarto Casal
+  icon: mdi:timer
+  initial: 5
+  min: 1
+  max: 15
+  step: 1
+  
+slid_cont_filho:
+  name: Tempo Quarto Filho
+  icon: mdi:timer
+  initial: 5
+  min: 1
+  max: 15
+  step: 1
+  
+slid_cont_cozinha:
+  name: Tempo Cozinha
+  icon: mdi:timer
+  initial: 5
+  min: 1
+  max: 15
+  step: 1
