@@ -295,6 +295,8 @@ grp_03_06:
   view: false
   entities:
     - automation.temperatura_sacada
+    - automation.luz_sacada_on
+    - automation.luz_sacada_off
 
 #-------------------------------------------------------    
 
