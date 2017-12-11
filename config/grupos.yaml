@@ -74,7 +74,7 @@ scrip:
 #-------------------------------------------------------
 
 iluminacao:
-  name: Controle Lampada Fundo
+  name: Controle Iluminação
   view: true
   icon: mdi:lightbulb-on
   entities:
@@ -203,6 +203,15 @@ grp_01_2:
   entities:
     - light.iluminacao_sacada
 
+grp_01_03:
+  name: Controle Iluminação
+  view: false
+  entities:
+    - input_number.slid_cont_casal
+    - input_number.slid_cont_corredor
+    - input_number.slid_cont_cozinha
+    - input_number.slid_cont_filho
+    - input_number.slid_cont_sala
 
 #-------------------------------------------------------
 
@@ -257,6 +266,8 @@ grp_03_02:
     - automation.desliga_tv
     - automation.temperatura_sala
     - automation.liga_chromecast
+    - automation.controle_iluminacao_sala
+    - automation.controle_iluminacao_corredor
 
 grp_03_03:
   name: Automações Cozinha
@@ -264,6 +275,7 @@ grp_03_03:
   entities:
     - automation.desliga_luz_cozinha
     - automation.liga_luz_cozinha
+    - automation.controle_iluminacao_sala
     
 grp_03_04:
   name: Automações Quarto Filho
@@ -274,6 +286,7 @@ grp_03_04:
     - automation.apaga_lampada_quarto_casal
     - automation.apaga_luz_pedro_henrique
     - automation.temperatura_quarto_filho
+    - automation.controle_iluminacao_quarto_filho
 
 grp_03_05:
   name: Automações Quarto Casal
@@ -289,6 +302,7 @@ grp_03_05:
     - automation.desliga_ar_acordando
     - automation.seta_ar_on
     - automation.seta_ar_off
+    - automation.controle_iluminacao_quarto_casal
     
 grp_03_06:
   name: Automações Sacada
