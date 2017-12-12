@@ -1,4 +1,4 @@
-#--------------------------------------------------------
+    #--------------------------------------------------------
 # - grp_01 = iluminacao interna
 # - grp_02 = dados da tomada medicao geral
 # - grp_03 = conjunto de automações
@@ -80,6 +80,7 @@ iluminacao:
   entities:
     - group.grp_01_1
     - group.grp_01_2
+    - group.grp_01_3
     - group.grp_18
     
 #-------------------------------------------------------
