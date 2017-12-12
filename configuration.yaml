@@ -199,6 +199,7 @@ emoncms_history:
   whitelist:
     - sensor.cpu_temperature
     - sensor.tensao_ar
+    - sensor.potencia_ar
 
 #---------------------Calendar--------------------
 
