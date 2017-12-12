@@ -2,25 +2,14 @@
 - alias: Luz Sacada On
   initial_state: 'on'
   trigger:
-    platform: time
-    minutes: /20
-    seconds: 0
+    platform: state
+    entity_id: group.grp_09_02
+    from: 'home'
+    to: 'not_home'
   condition:
-    - condition: time
-      weekday:
-        - mon
-        - tue
-        - wed
-        - thu
-        - fri
-        - sat
-        - sun
     - condition: state
       entity_id: sun.sun
       state: 'below_horizon'
-    - condition: state
-      entity_id: group.grp_09_02
-      state: 'not_home'
   action:
     service: light.turn_on
     entity_id: light.iluminacao_sacada
@@ -28,9 +17,13 @@
 - alias: Luz Sacada Off
   trigger:
     platform: state
+    entity_id: group.grp_09_02
+    from: 'not_home'
+    to: 'home'
+  condition:
+    condition: state
     entity_id: sun.sun
-    from: 'below_horizon'
-    to: 'above_horizon'
+    state: 'below_horizon'  
   action:
     service: light.turn_off
     entity_id: light.iluminacao_sacada
