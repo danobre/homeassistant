@@ -204,14 +204,19 @@ grp_01_2:
   entities:
     - light.iluminacao_sacada
 
-grp_01_03:
+grp_01_3:
   name: Controle Iluminação
   view: false
   entities:
+    - sensor.tempo_control_casal
+    - sensor.tempo_control_filho
+    - sensor.tempo_control_corredor
+    - sensor.tempo_control_cozinha
+    - sensor.tempo_control_sala
     - input_number.slid_cont_casal
+    - input_number.slid_cont_filho
     - input_number.slid_cont_corredor
     - input_number.slid_cont_cozinha
-    - input_number.slid_cont_filho
     - input_number.slid_cont_sala
 
 #-------------------------------------------------------

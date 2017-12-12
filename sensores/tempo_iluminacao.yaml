@@ -1,0 +1,22 @@
+platform: template
+sensors:
+  tempo_control_casal:
+    friendly_name: Tempo Controle Iluminacao Casal
+    value_template: '{{ states("input_number.slid_cont_casal") | int }}'
+    unit_of_measurement: " "
+  tempo_control_filho:
+    friendly_name: Tempo Controle Iluminacao Filho
+    value_template: '{{ states("input_number.slid_cont_filho") | int }}'
+    unit_of_measurement: " "
+  tempo_control_corredor:
+    friendly_name: Tempo Controle Iluminacao Corredor
+    value_template: '{{ states("input_number.slid_cont_corredor") | int }}'
+    unit_of_measurement: " "
+  tempo_control_cozinha:
+    friendly_name: Tempo Controle Iluminacao Cozinha
+    value_template: '{{ states("input_number.slid_cont_cozinha") | int }}'
+    unit_of_measurement: " "
+  tempo_control_sala:
+    friendly_name: Tempo Controle Iluminacao Sala
+    value_template: '{{ states("input_number.slid_cont_sala") | int }}'
+    unit_of_measurement: " "
