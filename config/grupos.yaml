@@ -69,7 +69,10 @@ scrip:
   view: true
   icon: mdi:script
   entities:
-    - group.grp_04
+    - group.grp_04_1
+    - group.grp_04_2
+    - group.grp_04_3
+    - group.grp_04_4
 
 #-------------------------------------------------------
 
@@ -320,33 +323,57 @@ grp_03_06:
 
 #-------------------------------------------------------    
 
-grp_04:
-  name: Scripts
+grp_04_1:
+  name: Ar Condicionado
   view: false
   control: hidden
   entities:
-    - script.scr_envia_temp_rasp
+    - script.scr_gelar
+    - script.scr_ar_con_off
+    - script.scr_ar_con_on
+    
+grp_04_2:
+  name: Controle TV
+  view: false
+  control: hidden
+  entities:
     - script.scr_set12
     - script.scr_set85
     - script.scr_acordando
     - script.scr_acordando_notifica
-    - script.scr_atualiza_dispositivos
     - script.scr_aumenta_volume
     - script.scr_diminui_volume
-    - script.scr_envia_temp_rasp
-    - script.scr_gelar
-    - script.scr_liga_luz_01
-    - script.scr_loca_casa
-    - script.scr_loca_casa2
-    - script.scr_loca_not_casa
-    - script.scr_loca_not_casa2
     - script.scr_set12
     - script.scr_set85
     - script.scr_trabalhar
     - script.scr_vlm_mais
-    - script.scr_vlm_mais_reset
-    - script.scr_ar_con_off
-    - script.scr_ar_con_on
+    
+grp_04_3:
+  name: Diversos
+  view: false
+  control: hidden
+  entities:
+    - script.scr_envia_temp_rasp
+    - script.scr_liga_luz_01
+
+    
+grp_04_3:
+  name: Localização
+  view: false
+  control: hidden
+  entities:
+    - script.scr_atualiza_dispositivos
+    - script.scr_loca_casa
+    - script.scr_loca_casa2
+    - script.scr_loca_not_casa
+    - script.scr_loca_not_casa2
+    
+grp_04_3:
+  name: Iluminação
+  view: false
+  control: hidden
+  entities:
+    - script.scr_ctrl_ilm_corredor
     
 #-------------------------------------------------------
 
