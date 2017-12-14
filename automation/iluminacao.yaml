@@ -88,17 +88,14 @@
     entity_id: light.iluminacao_corredor
     from: 'off'
     to: 'on'
-    for:
-      hours: 0
-      minutes: 7
-      seconds: 0
   condition:
     - condition: time
       after: '07:00:00'
       before: '19:00:00'
   action:
-   service: light.turn_off
-   entity_id: light.iluminacao_corredor
+    - delay: '00:{{ states.sensor.tempo_cotrol_corredor.state }}:00'
+    - service: light.turn_on
+      entity_id: light.iluminacao_corredor
    
 - alias: Controle Iluminação Cozinha
   trigger: 
