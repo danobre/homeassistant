@@ -21,6 +21,6 @@ sensors:
     value_template: '{{ states("input_number.slid_cont_sala") | int }}'
     unit_of_measurement: " "
   tempo_control_sacada:
-    friendly_name: Tempo Controle Iluminacao Sala
+    friendly_name: Tempo Controle Iluminacao Sacada
     value_template: '{{ states("input_number.slid_cont_sacada") | int }}'
     unit_of_measurement: " "
