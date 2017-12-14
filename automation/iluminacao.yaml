@@ -34,17 +34,14 @@
     entity_id: light.iluminacao_quarto_casal
     from: 'off'
     to: 'on'
-    for:
-      hours: 0
-      minutes: 7
-      seconds: 0
   condition:
     - condition: time
       after: '07:00:00'
       before: '19:00:00'
   action:
-   service: light.turn_off
-   entity_id: light.iluminacao_quarto_casal
+    - delay: '00:{{ states.sensor.tempo_control_casal.state }}:00'
+    - service: light.turn_off
+      entity_id: light.iluminacao_quarto_casal
    
 - alias: Controle Iluminação Quarto Filho
   trigger: 
@@ -52,17 +49,14 @@
     entity_id: light.iluminacao_quarto_filho
     from: 'off'
     to: 'on'
-    for:
-      hours: 0
-      minutes: 7
-      seconds: 0
   condition:
     - condition: time
       after: '07:00:00'
       before: '19:00:00'
   action:
-   service: light.turn_off
-   entity_id: light.iluminacao_quarto_filho
+    - delay: '00:{{ states.sensor.tempo_control_filho.state }}:00'
+    - service: light.turn_off
+      entity_id: light.iluminacao_quarto_filho
    
 - alias: Controle Iluminação Sala
   trigger: 
@@ -70,17 +64,14 @@
     entity_id: light.iluminacao_sala
     from: 'off'
     to: 'on'
-    for:
-      hours: 0
-      minutes: 7
-      seconds: 0
   condition:
     - condition: time
       after: '07:00:00'
       before: '19:00:00'
   action:
-   service: light.turn_off
-   entity_id: light.iluminacao_sala
+    - delay: '00:{{ states.sensor.tempo_control_sala.state }}:00'
+    - service: light.turn_off
+      entity_id: light.iluminacao_sala
    
 - alias: Controle Iluminação Corredor
   trigger: 
@@ -103,14 +94,26 @@
     entity_id: light.iluminacao_cozinha
     from: 'off'
     to: 'on'
-    for:
-      hours: 0
-      minutes: 7
-      seconds: 0
   condition:
     - condition: time
       after: '07:00:00'
       before: '19:00:00'
   action:
-   service: light.turn_off
-   entity_id: light.iluminacao_cozinha
+    - delay: '00:{{ states.sensor.tempo_control_cozinha.state }}:00'
+    - service: light.turn_off
+      entity_id: light.iluminacao_cozinha
+      
+- alias: Controle Iluminação Sacada
+  trigger: 
+    platform: state
+    entity_id: light.iluminacao_sacada
+    from: 'off'
+    to: 'on'
+  condition:
+    - condition: time
+      after: '07:00:00'
+      before: '19:00:00'
+  action:
+    - delay: '00:{{ states.sensor.tempo_control_sacada.state }}:00'
+    - service: light.turn_off
+      entity_id: light.iluminacao_sacada
