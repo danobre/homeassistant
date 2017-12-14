@@ -1,7 +1,0 @@
-scr_ar_con_off:
-  alias: Ar Off
-  sequence:
-    - service: switch.turn_off
-      entity_id: switch.controle_ar_condicionado
-
-   

@@ -1,9 +1,0 @@
-scr_liga_luz_01:
-  alias: Liga Luz Cor Vermelha
-  sequence:
-    - service: light.turn_on
-      entity_id: light.gateway_light_34ce00813667
-      data:
-        brightness: 80
-        rgb_color: [255,0,255]
-    

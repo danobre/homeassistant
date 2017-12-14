@@ -1,0 +1,60 @@
+scr_loca_casa:
+  alias: Localiza Casa
+  sequence:
+    - service: notify.notifica_telegram
+      data:
+        message: 'Elida Está em Casa'
+      
+scr_loca_casa2:
+  alias: Localiza Casa 2
+  sequence:
+    - service: notify.notifica_telegram_2
+      data:
+        message: 'Denis Está em Casa'
+          
+scr_loca_not_casa:
+  alias: Localiza Not Casa
+  sequence:
+    - service: notify.notifica_telegram
+      data:
+        message: 'Elida não Está em Casa'
+    - service: notify.notifica_telegram
+      data:
+        message: 'Localizando'
+    - delay: '00:00:02'
+    - service: telegram_bot.send_location
+      data:
+        latitude: '{{states.device_tracker.elida_samsung.attributes.latitude}}'
+        longitude: '{{states.device_tracker.elida_samsung.attributes.longitude}}'  
+
+scr_loca_not_casa2:
+  alias: Localiza Not Casa 2
+  sequence:
+    - service: notify.notifica_telegram
+      data:
+        message: 'Denis não Está em Casa'
+    - service: notify.notifica_telegram
+      data:
+        message: 'Localizando'
+    - delay: '00:00:02'
+    - service: telegram_bot.send_location
+      data:
+        latitude: '{{states.device_tracker.denis_leeco.attributes.latitude}}'
+        longitude: '{{states.device_tracker.denis_leeco.attributes.longitude}}'   
+        target: "474880777"            
+          
+scr_atualiza_dispositivos:
+  alias: Atualiza Dispositivos
+  sequence:
+    - service: mqtt.publish
+      data:
+        topic: "owntracks/denis/leeco/cmd"
+        payload_template: '{"_type":"cmd","action":"reportLocation"}'
+    - service: mqtt.publish
+      data:
+        topic: "owntracks/elida/samsung/cmd"
+        payload_template: '{"_type":"cmd","action":"reportLocation"}'
+    - service: mqtt.publish
+      data:
+        topic: "owntracks/denis/s5/cmd"
+        payload_template: '{"_type":"cmd","action":"reportLocation"}'

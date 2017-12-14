@@ -1,0 +1,8 @@
+scr_ctrl_ilm_corredor:
+  alias: Control Iluminação Corredor
+  sequence:
+    - delay:  '00:{{ states.sensor.tempo_cotrol_corredor.state }}:00'
+    - service: light.turn_off
+      data:
+        entity_id: light.iluminacao_corredor
+    

@@ -1,8 +1,0 @@
-scr_set12:
-  alias: Canal 12
-  sequence:
-    - service: homeassistant.turn_on
-      entity_id: switch.num_1
-    - delay: '00:00:01'
-    - service: homeassistant.turn_on
-      entity_id: switch.num_2

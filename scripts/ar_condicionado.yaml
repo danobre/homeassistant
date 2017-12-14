@@ -1,3 +1,24 @@
+scr_ar_con_off:
+  alias: Ar Off
+  sequence:
+    - service: switch.turn_off
+      entity_id: switch.controle_ar_condicionado
+        
+scr_ar_con_on:
+  alias: Ar On
+  sequence:
+    - service: switch.turn_on
+      entity_id: switch.controle_ar_condicionado
+    - delay: '00:00:01'
+    - service: switch.turn_on
+      entity_id: switch.ar_condicionado_16
+    - delay: '00:00:02'
+    - service: switch.turn_on
+      entity_id: switch.ar_condicionado_doctor
+    - delay: '00:00:02'
+    - service: switch.turn_on
+      entity_id: switch.ar_condicionado_turbo
+        
 scr_gelar:
   alias: Gelar
   sequence:

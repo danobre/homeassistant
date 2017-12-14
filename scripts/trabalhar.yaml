@@ -1,7 +1,0 @@
-scr_trabalhar:
-  alias: Indo Trabalhar
-  sequence:
-    - service: homeassistant.turn_off
-      entity_id: switch.receptor
-    - service: homeassistant.turn_off
-      entity_id: switch.tv_lg
