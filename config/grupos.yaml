@@ -216,11 +216,13 @@ grp_01_3:
     - sensor.tempo_control_corredor
     - sensor.tempo_control_cozinha
     - sensor.tempo_control_sala
+    - sensor.tempo_control_sacada
     - input_number.slid_cont_casal
     - input_number.slid_cont_filho
     - input_number.slid_cont_corredor
     - input_number.slid_cont_cozinha
     - input_number.slid_cont_sala
+    - input_number.slid_cont_sacada
 
 #-------------------------------------------------------
 
