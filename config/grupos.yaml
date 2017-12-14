@@ -73,6 +73,7 @@ scrip:
     - group.grp_04_2
     - group.grp_04_3
     - group.grp_04_4
+    - group.grp_04_5
 
 #-------------------------------------------------------
 
@@ -359,7 +360,7 @@ grp_04_3:
     - script.scr_liga_luz_01
 
     
-grp_04_3:
+grp_04_4:
   name: Localização
   view: false
   control: hidden
@@ -370,7 +371,7 @@ grp_04_3:
     - script.scr_loca_not_casa
     - script.scr_loca_not_casa2
     
-grp_04_3:
+grp_04_5:
   name: Iluminação
   view: false
   control: hidden
