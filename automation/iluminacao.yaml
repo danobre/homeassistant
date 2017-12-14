@@ -35,9 +35,9 @@
     from: 'off'
     to: 'on'
   condition:
-    - condition: time
-      after: '07:00:00'
-      before: '19:00:00'
+    - condition: state
+      entity_id: sun.sun
+      state: 'above_horizon'
   action:
     - delay: '00:{{ states.sensor.tempo_control_casal.state }}:00'
     - service: light.turn_off
@@ -50,9 +50,9 @@
     from: 'off'
     to: 'on'
   condition:
-    - condition: time
-      after: '07:00:00'
-      before: '19:00:00'
+    - condition: state
+      entity_id: sun.sun
+      state: 'above_horizon'
   action:
     - delay: '00:{{ states.sensor.tempo_control_filho.state }}:00'
     - service: light.turn_off
@@ -65,9 +65,9 @@
     from: 'off'
     to: 'on'
   condition:
-    - condition: time
-      after: '07:00:00'
-      before: '19:00:00'
+    - condition: state
+      entity_id: sun.sun
+      state: 'above_horizon'
   action:
     - delay: '00:{{ states.sensor.tempo_control_sala.state }}:00'
     - service: light.turn_off
@@ -80,9 +80,9 @@
     from: 'off'
     to: 'on'
   condition:
-    - condition: time
-      after: '07:00:00'
-      before: '19:00:00'
+    - condition: state
+      entity_id: sun.sun
+      state: 'above_horizon'
   action:
     - delay: '00:{{ states.sensor.tempo_control_corredor.state }}:00'
     - service: light.turn_off
@@ -110,9 +110,9 @@
     from: 'off'
     to: 'on'
   condition:
-    - condition: time
-      after: '07:00:00'
-      before: '19:00:00'
+    - condition: state
+      entity_id: sun.sun
+      state: 'above_horizon'
   action:
     - delay: '00:{{ states.sensor.tempo_control_sacada.state }}:00'
     - service: light.turn_off
