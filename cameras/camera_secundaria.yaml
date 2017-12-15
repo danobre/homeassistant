@@ -1,5 +1,5 @@
 platform: onvif
-host: http://noobres.homedns.org:91
+host: !secret came
 name: 'Camera Secundaria'
-username: 'admin'
-password: 'admin'
+username: !secret user_cam
+password: !secret pass_cam
