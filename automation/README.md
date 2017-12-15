@@ -20,4 +20,11 @@
 <h4>Controles (controles.yaml) </h4>
   <ul> Checa Localização - Chegando em Casa - Liga Dispositivos </ul>
   <ul> Checa Localização - Saindo de Casa - Desliga Dispositivos </ul>
+  
+<h4>Iluminação (iluminação.yaml) </h4>
+  <ul> No geral verifica se está durante o dia(dependendo da posição do sol) e controla a iluminação do apartamento, ou seja, caso a luz esteja ligada durante o dia a lâmpada é desligada depois de um tempo definido na tela de iluminação. </ul>
+  <ul> A ideia da automação é tentar garantir que não fique lâmpadas ligadas pela casa sem necessidade. </ul>
+  
+<h4>Controle Via Telegram (telegram_acionamentos.yaml) </h4>  
+  <ul> Controle do apartamento via Aplicativo Telegram, via Chatbot. São feitos diversos acionamentos via Telegram, como ligar lampadas, controle de temperatura, checa temperatura dos cômodos. </ul>
 
