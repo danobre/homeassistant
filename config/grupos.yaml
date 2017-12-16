@@ -121,7 +121,6 @@ tv_control:
     - group.grp_19_01
     - group.grp_19_02
     - group.grp_19_03
-    - media_player.sala_nobre
 
 #-------------------------------------------------------
 

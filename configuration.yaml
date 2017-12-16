@@ -37,18 +37,11 @@ history:
 logbook:
   include:
     domains:
-      - sensor
       - switch
       - automation
       - script
-      - group
-      - device_tracker
-      - zone
 
 sun:
-
-ffmpeg:
-  ffmpeg_bin: /usr/bin/avconv
 
 map:
 
@@ -167,7 +160,7 @@ thingspeak:
 
 mqtt:
   discovery: true
-  broker: localhost
+  broker: 192.168.2.55
   port: 1883
   username: !secret mqtt_user
   password: !secret mqtt_pass
@@ -185,10 +178,6 @@ device_tracker:
  
 #---------------------Media Player----------------
 
-media_player:
-  - platform: cast
-  - platform: mpchc
-    host: http://192.168.2.103
   
 #---------------------Econcms History------------
 
@@ -237,10 +226,6 @@ panel_iframe:
     icon: mdi:responsive
 
 #---------------------Google----------------------
-
-google:
-  client_id: !secret google_cli_id
-  client_secret: !secret google_cli_sec
 
 #---------------------System Log------------------
 
