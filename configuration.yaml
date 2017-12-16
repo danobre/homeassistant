@@ -217,11 +217,11 @@ panel_iframe:
     url: 'http://192.168.2.65'
     icon: mdi:responsive
   filho:
-    title: Sonoff Luz Quarto Casal
+    title: Sonoff Luz Quarto Filho
     url: 'http://192.168.2.92'
     icon: mdi:responsive
   sacada:
-    title: Sonoff Luz Quarto Casal
+    title: Sonoff Luz Quarto Sacada
     url: 'http://192.168.2.91'
     icon: mdi:responsive
 
