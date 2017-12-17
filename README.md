@@ -9,6 +9,9 @@ Basicamente o projeto de automação foi divido em duas etapas:
 
 <h3> Definições </h3>
 
+A ideia do projeto é desenvolver um projeto de automação residencial completo envolvendo bem o conceito de IOT.
+Diferentemente de quando se fala de projetos de automação residencial que as pessoas só pensam em instalar câmeras de segunda a ideia de iot é 'conectar tudo com todos' onde se pode haver a interação entre vários componente. Partindo desta ideia foi dado inicio aos estudos.
+
 Durante os estudos de para o projeto de automação residencial foi visto que havia vários hardware o primeiro dele foi o Arduino https://www.arduino.cc/en/Main/Products. Esse se demonstrou muito eficiente mas a parte de interação gráfica levaria a um desenvolvimento muito longo e não seria algo que daria para aproveitar para outros usuários, mesmo disponibilizando o código fonte.
 
 Passando para outros testes foi encontrado dispostivios da Broadlink http://www.ibroadlink.com/sp3/ e os demais modelos. Essas tomadas seriam de grande utilizade para poder fazer automações e criação de cenas mas isso dependeria do aplicativo próprio da tomada o que não permitia a integração/automação entre outros hardwares.
