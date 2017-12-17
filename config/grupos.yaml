@@ -540,6 +540,8 @@ grp_14:
   - binary_sensor.Status_Sonoff_sala
   - binary_sensor.Status_Sonoff_cozinha
   - binary_sensor.Status_Sonoff_quarto_casal
+  - binary_sensor.Status_Sonoff_quarto_filho
+  - binary_sensor.Status_Sonoff_quarto_sacada
   - binary_sensor.status_rm_quarto
   - binary_sensor.status_rm_sala
   - binary_sensor.status_extensao
