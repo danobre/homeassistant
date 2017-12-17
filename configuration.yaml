@@ -7,22 +7,6 @@ homeassistant:
   time_zone: America/Sao_Paulo
   customize: !include_dir_merge_named custom
   
-#---------------------Testes--------------------- 
-
-input_datetime:
-  both_date_and_time:
-    name: Input with both date and time
-    has_date: true
-    has_time: true
-  only_date:
-    name: Input with only date
-    has_date: true
-    has_time: false
-  only_time:
-    name: Input with only time
-    has_date: false
-    has_time: true 
-
 #---------------------Componentes Diversos-------
 
 config:
@@ -47,65 +31,6 @@ sun:
 map:
 
 discovery:
-
-#-------------------------------------------------
-
-#---------------------Frontend--------------------
-
-frontend:
-  javascript_version: latest
-  
-  themes:
-  
-    dark:
-      primary-color: "#396FB6"
-    red:
-      primary-color: "#f44336"
-    pink:
-      primary-color: "#e91e63"
-    purple:
-      primary-color: "#9c27b0"
-    deep-purple:
-      primary-color: "#673ab7"
-    indigo:
-      primary-color: "#3f51b5"
-    blue:
-      primary-color: "#2196f3"
-    light-blue:
-      primary-color: "#03a9f4"
-    cyan:
-      primary-color: "#00bcd4"
-    teal:
-      primary-color: "#009688"
-    green:
-      primary-color: "#4caf50"
-    light-green:
-      primary-color: "#8bc34a"
-    lime:
-      primary-color: "#cddc39"
-    yellow:
-      primary-color: "#ffeb3b"
-    amber:
-      primary-color: "#ffc107"
-    orange:
-      primary-color: "#ff9800"
-    deep-orange:
-      primary-color: "#ff5722"
-    brown:
-      primary-color: "#795548"
-    grey:
-      primary-color: "#9e9e9e"
-    blue-grey:
-      primary-color: "#607d8b"
-    sad:
-      primary-color: blue
-
-
-#---------------------Timer-----------------------
-
-timer:
-  timer:
-    duration: '00:01:00'
 
 #---------------------Xiaomi----------------------
 
@@ -177,9 +102,6 @@ device_tracker:
    count: 10
  - platform: owntracks_http
  
-#---------------------Media Player----------------
-
-  
 #---------------------Econcms History------------
 
 emoncms_history:
@@ -190,13 +112,6 @@ emoncms_history:
     - sensor.cpu_temperature
     - sensor.tensao_ar
     - sensor.potencia_ar
-
-#---------------------Calendar--------------------
-
-calendar:
-  - platform: todoist
-    token: !secret chave_todoist
-    name: Tarefas Diárias
 
 #---------------------Weblinks--------------------
 
@@ -240,13 +155,6 @@ tts:
   - platform: google
     cache: true
     time_memory: 300
-
-#---------------------Counter---------------------
-
-counter:
-  ciclo_alarme:
-    initial: 0
-    step: 1
 
 #---------------------IFTTT-----------------------
 
