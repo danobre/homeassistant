@@ -1,8 +1,40 @@
-scr_ctrl_ilm_corredor:
-  alias: Control Iluminação Corredor
-  sequence:
-    - delay:  '00:{{ states.sensor.tempo_cotrol_corredor.state }}:00'
-    - service: light.turn_off
-      data:
-        entity_id: light.iluminacao_corredor
+#scr_ctrl_ilm_corredor:
+#  alias: Control Iluminação Corredor
+#  sequence:
+#    - delay:  '00:{{ states.sensor.tempo_cotrol_corredor.state }}:00'
+#    - service: light.turn_off
+#      data:
+#        entity_id: light.iluminacao_corredor
+        
+#scr_ctrl_ilm_casal:
+#  alias: Control Iluminação Casal
+#  sequence:
+#    - delay:  '00:{{ states.sensor.tempo_cotrol_casal.state }}:00'
+#    - service: light.turn_off
+#      data:
+#        entity_id: light.iluminacao_corredor
+        
+#scr_ctrl_ilm_filho:
+#  alias: Control Iluminação Filho
+#  sequence:
+#    - delay:  '00:{{ states.sensor.tempo_cotrol_filho.state }}:00'
+#    - service: light.turn_off
+#      data:
+#        entity_id: light.iluminacao_corredor
+        
+#scr_ctrl_ilm_sacada:
+#  alias: Control Iluminação Sacada
+#  sequence:
+#    - delay:  '00:{{ states.sensor.tempo_cotrol_sacada.state }}:00'
+#    - service: light.turn_off
+#      data:
+#        entity_id: light.iluminacao_corredor
+        
+#scr_ctrl_ilm_cozinha:
+#  alias: Control Iluminação Cozinha
+#  sequence:
+#    - delay:  '00:{{ states.sensor.tempo_cotrol_cozinha.state }}:00'
+#    - service: light.turn_off
+#      data:
+#        entity_id: light.iluminacao_corredor
     
