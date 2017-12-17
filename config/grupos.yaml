@@ -45,13 +45,6 @@ default_view:
     - group.grp_25_1
     - group.grp_12_5
     - group.grp_27
-    - input_boolean.ctrl_vol_mais
-    - input_boolean.ctrl_vol_mais_reset
-    - input_datetime.both_date_and_time
-    - input_datetime.only_date
-    - input_datetime.only_time
-    
-
 
 #-------------------------------------------------------
 
@@ -141,11 +134,7 @@ web_cam:
   view: true
   icon: mdi:webcam
   entities:
-    - camera.trabalho_street_view
     - camera.camera_secundaria
-    - camera.camera_principal_1
-    - camera.camera_principal_2
-    - camera.camera_principal_3
 
 #-------------------------------------------------------  
 
@@ -564,7 +553,7 @@ grp_15:
   icon: mdi:source-commit-start
   control: hidden
   entities:
-    - counter.ciclo_alarme
+#    - counter.ciclo_alarme
     - sensor.total_ciclo
     
 #------------------------------------------------------- 
@@ -668,9 +657,9 @@ grp_22:
   name: Tarefas Domésticas
   view: false
   entities:
-    - calendar.casa
-    - calendar.inbox
-    - calendar.tarefas
+#    - calendar.casa
+#    - calendar.inbox
+#    - calendar.tarefas
     
 #-------------------------------------------------------
 grp_23:

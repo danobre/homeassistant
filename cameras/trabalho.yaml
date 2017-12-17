@@ -1,4 +1,0 @@
-platform: generic
-name: Trabalho Street View
-still_image_url: https://maps.googleapis.com/maps/api/streetview?size=600x600&location={{states.calendar.homeautomation.attributes.location}}
-limit_refetch_to_url_change: true
