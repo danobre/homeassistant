@@ -26,11 +26,11 @@
 #    service: script.scr_atualiza_dispositivos
     service: script.scr_trabalhar
     
-- alias: "Owntracks Refresh"
-  trigger:
-    - platform: time
-      minutes: '/3'
-      seconds: 0
-  action:
-    service: script.scr_atualiza_dispositivos
+#- alias: "Owntracks Refresh"
+#  trigger:
+#    - platform: time
+#      minutes: '/3'
+#      seconds: 0
+#  action:
+#    service: script.scr_atualiza_dispositivos
  

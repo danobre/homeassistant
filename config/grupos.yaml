@@ -1,4 +1,4 @@
-    #--------------------------------------------------------
+#--------------------------------------------------------
 # - grp_01 = iluminacao interna
 # - grp_02 = dados da tomada medicao geral
 # - grp_03 = conjunto de automações
@@ -246,7 +246,7 @@ grp_03_01:
     - automation.localiza_dona
     - automation.localizar_denis
     - automation.localizar_elida
-    - automation.owntracks_refresh
+#    - automation.owntracks_refresh
     - automation.saindo_de_casa
     - automation.temperatura_rasp
     - automation.teste_timer
