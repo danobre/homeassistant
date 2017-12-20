@@ -1,21 +1,57 @@
 - alias: Acende Lampada Quarto Casal
   trigger:
-    platform: event
-    event_type: click
-    event_data:
-       entity_id: binary_sensor.switch_158d00016d7b12
-       click_type: long_click_press
+    - platform: event
+      event_type: click
+      event_data:
+        entity_id: binary_sensor.switch_158d00016d7b12
+        click_type: single
+  condition:
+    - condition: state
+      entity_id: light.iluminacao_quarto_casal
+      state: 'off'
   action:
     service: light.turn_on
     entity_id: light.iluminacao_quarto_casal
     
 - alias: Apaga Lampada Quarto Casal
   trigger:
-    platform: event
-    event_type: click
-    event_data:
-       entity_id: binary_sensor.switch_158d00016d7b12
-       click_type: single
+    - platform: event
+      event_type: click
+      event_data:
+        entity_id: binary_sensor.switch_158d00016d7b12
+        click_type: single
+  condition:
+    - condition: state
+      entity_id: light.iluminacao_quarto_casal
+      state: 'on'
   action:
     service: light.turn_off
     entity_id: light.iluminacao_quarto_casal
+    
+- alias: Hora de Dormir
+  trigger:
+    - platform: event
+      event_type: click
+      event_data:
+        entity_id: binary_sensor.switch_158d00016d7b12
+        click_type: long_click_press
+  action:
+    - service: light.turn_off
+      entity_id: light.iluminacao_quarto_casal
+    - delay: '00:00:01'
+    - service: light.turn_off
+      entity_id: light.iluminacao_quarto_filho
+    - delay: '00:00:01'
+    - service: light.turn_off
+      entity_id: light.iluminacao_cozinha
+    - delay: '00:00:01'
+    - service: light.turn_off
+      entity_id: light.iluminacao_sala
+    - delay: '00:00:01'
+    - service: light.turn_off
+      entity_id: light.iluminacao_corredor
+    - delay: '00:00:01'
+    - service: light.turn_off
+      entity_id: light.iluminacao_sacada
+
+  

@@ -250,6 +250,7 @@ grp_03_01:
     - automation.saindo_de_casa
     - automation.temperatura_rasp
     - automation.teste_timer
+    - automation.hora_de_dormir
 
 grp_03_02:
   name: Automações Sala
