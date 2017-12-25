@@ -375,12 +375,7 @@ grp_05:
   icon: mdi:dip-switch
   control: hidden
   entities:
-    - switch.lgld
-    - switch.lgv
-    - switch.lgv_2    
     - switch.geladeira
-    - switch.tomada_quarto_casal
-    - switch.tomada_quarto_filho
 
 #-------------------------------------------------------
 
