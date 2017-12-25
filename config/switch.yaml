@@ -95,10 +95,10 @@
   type: mp1
   friendly_name: 'MP1'
   slots:
-    slot_1: 'Receptor'
-    slot_2: 'ChromeCast'
-    slot_3: 'TV LG'
-    slot_4: 'Reserva'
+    slot_1: 'Reserva1'
+    slot_2: 'Reserva2'
+    slot_3: 'Reserva3'
+    slot_4: 'Reserva4'
 
 - platform: tplink
   host: 192.168.2.71
@@ -109,14 +109,21 @@
   host: 192.168.2.60
   mac: '34:EA:34:F6:40:87'
   type: sp3
-  friendly_name: "Tomada Quarto Casal"
+  friendly_name: "Receptor"
   icon: mdi:power-socket
   
 - platform: broadlink
   host: 192.168.2.73
   mac: '34:EA:34:B8:1D:F6'
   type: sp3
-  friendly_name: "Tomada Quarto Filho"
+  friendly_name: "Chromecast"
+  icon: mdi:power-socket
+  
+- platform: broadlink
+  host: 192.168.2.74
+  mac: '34:EA:34:B8:1D:F6'
+  type: sp3
+  friendly_name: "TV LG"
   icon: mdi:power-socket
   
 
