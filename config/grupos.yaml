@@ -316,6 +316,8 @@ grp_03_06:
     - automation.temperatura_sacada
     - automation.luz_sacada_on
     - automation.luz_sacada_off
+    - automation.checa_ferias
+    - automation.controle_sacada_ferias
 
 #-------------------------------------------------------    
 
@@ -370,6 +372,7 @@ grp_04_5:
   control: hidden
   entities:
     - script.scr_ctrl_ilm_corredor
+    - script.scr_control_sacada
     
 #-------------------------------------------------------
 
