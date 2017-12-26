@@ -53,7 +53,8 @@ interr:
   view: true
   icon: mdi:power-socket
   entities:
-    - group.grp_05
+    - group.grp_05_1
+    - group.grp_05_2
     
 #------------------------------------------------------
     
@@ -369,13 +370,23 @@ grp_04_5:
     
 #-------------------------------------------------------
 
-grp_05:
+grp_05_1:
   name: Interruptores
   view: false
   icon: mdi:dip-switch
   control: hidden
   entities:
     - switch.geladeira
+    
+grp_05_2:
+  name: Extensao Quarto Casal
+  view: false
+  icon: mdi:dip-switch
+  entities:
+    - switch.reserva1
+    - switch.reserva2
+    - switch.reserva3
+    - switch.reserva4
 
 #-------------------------------------------------------
 
