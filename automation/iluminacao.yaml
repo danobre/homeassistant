@@ -117,3 +117,28 @@
     - delay: '00:{{ states.sensor.tempo_control_sacada.state }}:00'
     - service: light.turn_off
       entity_id: light.iluminacao_sacada
+      
+- alias: Checa Ferias
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id: group.grp_09_02
+    from: 'home'
+    to: 'not_home'
+    for:
+        hours: 16
+        minutes: 0
+        seconds: 0
+  action:
+    - service: automation.turn_on
+      entity_id: automation.controle_sacada_ferias
+      
+- alias: Controle Sacada Ferias
+  trigger:
+    platform: time
+    at: '19:50:01'
+  action:
+    - service: script.turn_on
+      entity_id: script.scr_control_sacada
+        
+  
