@@ -39,7 +39,6 @@ default_view:
     - group.grp_13
     - group.grp_17
     - group.grp_16
-    - group.grp_14
     - group.grp_20
     - group.grp_24
     - group.grp_25_1
@@ -168,7 +167,11 @@ disp:
   view: true
   icon: mdi:network
   entities:
-    - group.grp_14
+    - group.grp_14_1
+    - group.grp_14_2
+    - group.grp_14_3
+    - group.grp_14_4
+    - group.grp_14_5
 
 #------------------------------------------------------- 
 
@@ -534,25 +537,48 @@ grp_13:
 
 #-------------------------------------------------------
 
-grp_14:
-  name: Status Dispositivos
+grp_14_1:
+  name: Status Dispositivos Quarto Casal
   view: false
   icon: mdi:television-classic
   entities:
-#  - binary_sensor.status_ventilador_home_assistant
-#  - binary_sensor.status_carregador_relogio
-#  - binary_sensor.status_abajur_pedro_henrique
   - binary_sensor.status_tomada_ar_condidicionado
-# - binary_sensor.status_sonoff_sala_tv
-  - binary_sensor.Status_Sonoff_sala
-  - binary_sensor.Status_Sonoff_cozinha
   - binary_sensor.Status_Sonoff_quarto_casal
-  - binary_sensor.Status_Sonoff_quarto_filho
-  - binary_sensor.Status_Sonoff_quarto_sacada
   - binary_sensor.status_rm_quarto
-  - binary_sensor.status_rm_sala
   - binary_sensor.status_extensao
+  
+grp_14_2:
+  name: Status Dispositivos Quarto Filho
+  view: false
+  icon: mdi:television-classic
+  entities:
+  - binary_sensor.Status_Sonoff_quarto_filho
+  
+grp_14_3:
+  name: Status Dispositivos Sala
+  view: false
+  icon: mdi:television-classic
+  entities:
+  - binary_sensor.Status_Sonoff_sala
+  - binary_sensor.status_rm_sala
+  - binary_sensor.status_tomada_tv
+  - binary_sensor.status_tomada_receptor
+  - binary_sensor.status_tomada_chromecast
+  
+grp_14_4:
+  name: Status Dispositivos Cozinha
+  view: false
+  icon: mdi:television-classic
+  entities:
+  - binary_sensor.Status_Sonoff_cozinha
   - binary_sensor.status_geladeira
+  
+grp_14_5:
+  name: Status Dispositivos Sacada
+  view: false
+  icon: mdi:television-classic
+  entities:
+  - binary_sensor.status_sonoff_sacada
   
 #-------------------------------------------------------
 
