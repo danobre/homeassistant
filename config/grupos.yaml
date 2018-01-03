@@ -280,7 +280,7 @@ grp_03_03:
   entities:
     - automation.desliga_luz_cozinha
     - automation.liga_luz_cozinha
-    - automation.controle_iluminacao_sala
+    - automation.controle_iluminacao_cozinha
     
 grp_03_04:
   name: Automações Quarto Filho
