@@ -2,9 +2,12 @@
 - alias: Ar Condicionado - Desliga
   initial_state: "on"
   trigger:
-    platform: time
-    minutes: /20
-    seconds: 0
+#    platform: time
+#    minutes: /20
+#    seconds: 0
+    platform: numeric_state
+    entity_id: sensor.temperature_158d0001d6f829
+    below: 24
   condition:
     - condition: time
       weekday:
@@ -18,9 +21,9 @@
     - condition: time
       after: '23:00:00'
       before: '06:00:00'
-    - condition: numeric_state
-      entity_id: sensor.temperature_158d0001d6f829
-      below: 24
+#    - condition: numeric_state
+#      entity_id: sensor.temperature_158d0001d6f829
+#      below: 24
     - condition: state
       entity_id: input_boolean.ctrl_ar_con
       state: 'on'
@@ -35,9 +38,12 @@
 - alias: Ar Condicionado - Resfria
   initial_state: "on"
   trigger:
-    platform: time
-    minutes: /20
-    seconds: 0
+#    platform: time
+#    minutes: /20
+#    seconds: 0
+    platform: numeric_state
+    entity_id: sensor.temperature_158d0001d6f829
+    above: 26
   condition:
     - condition: time
       weekday:
@@ -51,9 +57,9 @@
     - condition: time
       after: '23:00:00'
       before: '06:00:00'
-    - condition: numeric_state
-      entity_id: sensor.temperature_158d0001d6f829
-      above: 26
+#    - condition: numeric_state
+#      entity_id: sensor.temperature_158d0001d6f829
+#      above: 26
     - condition: state
       entity_id: input_boolean.ctrl_ar_con
       state: 'on'
